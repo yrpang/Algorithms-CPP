@@ -21,7 +21,7 @@ public:
 
     void swim(int k)
     {
-        // 此处使用k>1 而不是k/2>=1 都一样
+        // 此处其实是k/2>=1 或许更好理解
         while (k > 1 && data[k] < data[k / 2])
         {
             std::swap(data[k], data[k / 2]);

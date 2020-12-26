@@ -21,7 +21,7 @@ public:
     }
     void insert(int k, T key)
     {
-        // 此处默认keys中是在k的位置存储key 实际上应该不是必须的
+        // 此处keys中是在k的位置存储key
         N++;
         pq[N] = k;
         qp[k] = N;
